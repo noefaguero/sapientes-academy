@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+        <link rel="stylesheet" href="../css/normalize.css">
+        <link rel="stylesheet" href="../css/style.css">
+        <link rel="stylesheet" href="../css/login.css">
+
+        <title>SAPIENTES</title>
+    </head>
+    <body>
+        <div class="container">
+            <div class="forms">
+
+                <!-- LOG IN -->
+                <div class="forms__login">
+                    <form action="" method="" class="form">
+                        <h2 class="form__title">IDENTIFÍCATE</h2>
+                        <div class="form__item">
+                            <i class="form__icon--placeholder fas fa-user"></i>
+                            <input type="text" class="input clicked" placeholder="USUARIO">
+                        </div>
+                        <div class="form__item">
+                            <i class="form__icon--placeholder fas fa-lock"></i>
+                            <input type="password" class="input clicked" placeholder="CONTRASEÑA">
+                        </div>
+                        <button class="form__btn clickable">ENTRAR</button>
+                        <span>o</span>
+                        <div class="form__social">
+                            <a href="" target="_blank" class="form__link clickable">
+                                <i class="form__icon--social fa-brands fa-google"></i>
+                            </a>
+                            <a href="" target="_blank" class="form__link clickable">
+                                <i class="form__icon--social fa-brands fa-facebook"></i>
+                            </a>
+                            <a href="" target="_blank" class="form__link clickable">
+                                <i class="form__icon--social fas fa-brands fa-apple"></i>
+                            </a>
+                        </div>
+                    </form>
+                </div>
+
+                <!-- SIGN IN -->
+                <div class="forms__signin">
+                    <form action="" method="" class="form">
+                        <h2 class="form__title">REGÍSTRATE</h2>
+                        <div class="form__item">
+                            <i class="form__icon--placeholder fas fa-envelope"></i>
+                            <input type="text" class="input clicked" placeholder="EMAIL">
+                        </div>
+                        <div class="form__item">
+                            <i class="form__icon--placeholder fas fa-user"></i>
+                            <input type="text" class="input clicked" placeholder="USUARIO">
+                        </div>
+                        <div class="form__item">
+                            <i class="form__icon--placeholder fas fa-lock-open"></i>
+                            <input type="password" class="input clicked" placeholder="CONTRASEÑA">
+                        </div>
+                        <div class="form__item">
+                            <i class="form__icon--placeholder fas fa-lock"></i>
+                            <input type="password" class="input clicked" placeholder="CONFIRMACIÓN">
+                        </div>
+                        <button class="form__btn clickable">ENVIAR</button>
+                    </form>
+                </div>
+
+            </div>
+
+            <!-- SIGN IN SECTION-->
+            <div class="signin-section" id="signin">
+                <img class="signin-section__img" src="../assets/images/student.svg" alt="."> 
+                <button class="signin-section__btn" id="signin__btn">
+                    REGÍSTRATE 
+                    <i class="fas fa-angle-right"></i>
+                </button> 
+            </div>
+
+            <!-- LOG IN SECTION -->
+            <div class="login-section" id="login">
+                  <img class="login-section__img" src="../assets/images/Classroom.svg" alt="."> 
+                  <button class="login-section__btn"  id="login__btn"> 
+                        <i class="fas fa-angle-left"></i>
+                        IDENTIFÍCATE
+                    </button> 
+            </div>
+        
+            <div class="circle" id="circle"></div>
+
+        </div>
+
+        
+
+        <script src="./js/script.js"></script>
+    </body>
+</html>
