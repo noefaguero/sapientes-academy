@@ -1,27 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400&display=swap');
 
-*{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    letter-spacing: 1px;
-}
 
-body{
-    background-color: #d3dbd9;
-    font-family: 'Quicksand', sans-serif;
-    color: rgb(74, 74, 74);
-}
-
-.container{
-    max-width: 1440px;
-    width: 100%;
-    min-width: 400px;
-    height: 100vh;
-    margin: 0 auto;
-    position: relative;
-    overflow: hidden;
-}
 
 /* FORMS */
 
