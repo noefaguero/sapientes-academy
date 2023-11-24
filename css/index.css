@@ -1,14 +1,14 @@
 
 .container{
     display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: max-content min-content 800px 400px 300px;
+    grid-template-columns: 35% 1fr;
+    grid-template-rows: repeat(4, min-content) 300px;
     grid-template-areas: 
-    "header"
-    "welcome"
-    "panel"
-    "suggestion"
-    "footer";
+    "header header"
+    "welcome welcome"
+    "panel panel"
+    "registration courses"
+    "footer footer";
 }
 
 /******************* HEADER ********************/
@@ -86,15 +86,30 @@
 
 /******************* MAIN **********************/
 
+/* common sections styles */
+.welcome,
+.panel,
+.courses,
+.registration{
+    padding: 0 30px;
+    margin: 50px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+    text-align: center;
+}
+
+.courses,
+.registration{
+    padding: 30px;
+}
+
+
 /* welcome section*/
 .welcome{
     grid-area: welcome;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 200px 0;
+    padding: 100px 0;
 
 }
 .welcome__title{
@@ -116,16 +131,11 @@
     padding: 0 30px;
 }
 
+
 /* subjects panel section */
 
 .panel{
     grid-area: panel;
-    padding: 0 30px;
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-    align-items: center;
-    text-align: center;
 }
 
 .panelcontainer{
@@ -134,17 +144,18 @@
 
 .panel__title{
     font-size: 35px;
-    margin-bottom: 30px;
+    margin: 30px 0;
 }
 
 .tab{
     display: flex;
     justify-content: space-between;
     gap: 20px;
+    width: 70%;
 }
   
 .tab__btn {
-    background: #98C6D3;
+    background: #A4BDBC;
     font-size: 16px;
     padding: 15px;
     font-family: inherit;
@@ -156,8 +167,8 @@
     padding: 20px;
     gap: 20px;
     border-radius: 25px;
-    margin-bottom: 20px;
     overflow: hidden;
+    background-color: #A4BDBC;
     position: relative;
 }
 
@@ -230,13 +241,40 @@
 .subject:hover .subject__title{
     transform: translateY(-100%);
 }
+
 .subject:hover .subject__img{
     transform: translateY(-100%);
 }
 
-/* suggestion section */
-.suggestion{
-    grid-area: suggestion;
+/* registration section */
+.registration{
+    grid-area: registration;
+}
+
+.registration__btn{
+    animation-name: clicking;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function:ease-in;
+}
+
+@keyframes clicking{
+    from{
+        box-shadow: 2px 2px 3px #4a4a4a, -2px -2px 3px #ffffff;
+        letter-spacing: 0.1rem;
+
+    }
+    to{
+        box-shadow: 0px 0px 2px #4a4a4a;
+        letter-spacing: 1px;
+        
+    }
+}
+
+/* courses section */
+.courses{
+    grid-area: courses;
 }
 
 /* footer */

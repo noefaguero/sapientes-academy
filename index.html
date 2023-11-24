@@ -31,7 +31,7 @@
             </section>
 
             <section class="panel">
-                <h2 class="panel__title">RAMAS DEL CONOCIMENTO</strong></h2>
+                <h2 class="panel__title">RAMAS DEL CONOCIMENTO</h2>
                 <div class="panelcontainer" id="panelcontainer">
                     <div id="tech-sci" class="tabcontent clicked active">
                         <div class="subject">
@@ -49,10 +49,6 @@
                         <div class="subject">
                             <img class="subject__img" src="./assets/images/et.jpeg" alt="">
                             <h3 class="subject__title">Tecnologías Energéticas y Ambientales</h3>
-                        </div>
-                        <div class="subject">
-                            <img class="subject__img" src="./assets/images/biotec.webp" alt="">
-                            <h3 class="subject__title">Biotecnología</h3>
                         </div>
                     </div>
                     <div id="nature-sci" class="tabcontent clicked">
@@ -108,28 +104,53 @@
                             <img class="subject__img" src="./assets/images/art.webp" alt="">
                             <h3 class="subject__title">Latín</h3>
                         </div>
-                        <div class="subject">
-                            <img class="subject__img" src="./assets/images/art.webp" alt="">
-                            <h3 class="subject__title">Griego</h3>
-                        </div>
                     </div>
-
-                    <div class="tab" id="tab">
-                        <button class="tab__btn clickable clicked">Ciencias Tecnológicas</button>
-                        <button class="tab__btn clickable">Ciencias Naturales</button>
-                        <button class="tab__btn clickable">Ciencias Sociales</button>
-                        <button class="tab__btn clickable">Humanidades y Arte</button>
-                    </div>
+                </div>
+                <div class="tab" id="tab">
+                    <button class="tab__btn clickable clicked">Ciencias Tecnológicas</button>
+                    <button class="tab__btn clickable">Ciencias Naturales</button>
+                    <button class="tab__btn clickable">Ciencias Sociales</button>
+                    <button class="tab__btn clickable">Humanidades y Arte</button>
                 </div>
                 
             </section>
 
-            <section class="suggestions">
+            <section class="registration">
+                <form action="" method="" class="form">
+                    <h2 class="form__title">MATRÍCULA</h2>
+                    <div class="form__item">
+                        <i class="form__icon--placeholder fas fa-user"></i>
+                        <input type="text" class="input clicked" placeholder="NOMBRE Y APELLIDOS">
+                    </div>
+                    <div class="form__item">
+                        <i class="form__icon--placeholder fas fa-envelope"></i>
+                        <input type="email" class="input clicked" placeholder="EMAIL">
+                    </div>
+                    <div class="form__item">
+                        <i class="form__icon--placeholder fas fa-book"></i>
+                        <select class="input clicked input-select">
+                            <option value="" disabled selected>CURSOS</option>
+                            <option value="1">Intensivo de Tecnología</option>
+                            <option value="2">Intensivo de Ciencias de la Salud</option>
+                            <option value="3">Online 3 Asignaturas</option>
+                            <option value="4">Online 6 Asignaturas</option>
+                        </select>
+                    </div>
+                    <div class="form__item">
+                        <i class="form__icon--placeholder fas fa-pen"></i>
+                        <textarea class="input clicked input-textarea" rows="5" placeholder="COMENTARIOS" ></textarea>
+                    </div>
+                    <button class="form__btn clickable registration__btn">SOLICITAR</button>
+                </form>
+                
+            </section>
 
+            <section class="courses">
+                
             </section>
 
             <footer class="footer">
-
+                
             </footer>
         </div>
 
