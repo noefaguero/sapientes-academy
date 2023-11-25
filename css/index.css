@@ -111,29 +111,6 @@
     padding: 100px 0;
 
 }
-.welcome__title{
-    background: linear-gradient(90deg, #80B3C2 20%, rgb(255, 166, 0) 40%);
-    background-size: 200%;
-    box-shadow: 2px 2px 3px #4a4a4a, -2px -2px 3px #ffffff;
-    font-size: 35px;
-    width: 100%;
-    padding: 30px 0;
-    margin-bottom: 20px;
-    animation-name: bluring;
-    animation-duration: 6s;
-    animation-iteration-count: infinite;
-    animation-direction:alternate-reverse;
-    animation-timing-function: ease-in-out;
-}
-
-@keyframes bluring {
-    0% {
-		background-position: 0 0;
-	}
-	100% {
-		background-position: 100% 0;
-	}
-}
 
 .welcome__title--strong{
     color: #ffffff;
@@ -286,59 +263,6 @@
     }
 }
 
-/* courses section */
-.courses{
-    grid-area: courses;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.course{
-    background-color: #A4BDBC;
-    padding: 20px 30px;
-    width: 80%;
-}
-
-.course__header{
-    display: flex;
-    justify-content: space-between;
-}
-
-.course__title{
-    font-size: 14px;
-}
-
-.course__body{
-    display: none;
-    text-align: left;
-    font-size: 12px;
-}
-
-.course__rule{
-    border: 1px solid  #4a4a4a;
-    margin: 10px 0;
-}
-
-.collapse{
-    display: block;
-    animation-name: collapsing;
-    animation-duration: 1s;
-    animation-fill-mode: forwards;
-}
-
-
-@keyframes collapsing {
-    from{
-        opacity: 0;
-    }
-    to{
-        opacity: 1;
-    }
-}
-
-/* menu */
-
 
 
 /* ******************* BREAKPOINTS ************************* */
@@ -347,15 +271,6 @@
     .welcome__body{
         font-size: 25px;
         padding: 0 30px;
-    }
-}
-
-@media screen and (min-width: 768px) {
-    .course__title{
-        font-size: 18px;
-    }
-    .course__body{
-        font-size: 18px;
     }
 }
 
@@ -370,12 +285,6 @@
         "courses"
         "registration"
         "footer";
-    }
-    .nav-sm{
-        display: none;
-    }
-    .nav-lg{
-        display: block;
     }
     .tab{
         display: flex;
