@@ -1,13 +1,12 @@
-
 .container{
     display: grid;
-    grid-template-columns: 35% 1fr;
+    grid-template-columns: 1fr 35%;
     grid-template-rows: repeat(4, min-content) 300px;
     grid-template-areas: 
     "header header"
     "welcome welcome"
     "panel panel"
-    "registration courses"
+    "courses registration"
     "footer footer";
 }
 
@@ -142,11 +141,6 @@
     width: 70%;
 }
 
-.panel__title{
-    font-size: 35px;
-    margin: 30px 0;
-}
-
 .tab{
     display: flex;
     justify-content: space-between;
@@ -249,6 +243,9 @@
 /* registration section */
 .registration{
     grid-area: registration;
+    padding: 0;
+    align-items: start;
+    justify-content: end;
 }
 
 .registration__btn{
@@ -275,9 +272,46 @@
 /* courses section */
 .courses{
     grid-area: courses;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.course{
+    background-color: #A4BDBC;
+    padding: 20px 30px;
+    width: 80%;
+}
+
+.course__header{
+    display: flex;
+    
+    justify-content: space-between;
+}
+
+.course__title{
+    font-size: 20px;
+}
+
+.course__body{
+    display: none;
+    text-align: left;
+    font-size: 18px;
+}
+
+.course__rule{
+    border: 1px solid  #4a4a4a;
+    margin: 10px 0;
+}
+
+.collapse{
+    display: block;
 }
 
 /* footer */
 .footer{
     grid-area: footer;
 }
+
+
+/******************* FOOTER ********************/
