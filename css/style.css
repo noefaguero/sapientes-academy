@@ -12,17 +12,113 @@ html{
 }
 
 body{
-    background-color: #d3dbd9;
+    background-color: #e6efed;
     font-family: 'Quicksand', sans-serif;
     color: rgb(74, 74, 74);
 }
 
 .container{
+    background-color: #d3dbd9;
     max-width: 1440px;
     width: 100%;
     min-width: 400px;
     margin: 0 auto;
     position: relative;
+}
+
+/* navigator */
+
+.nav-sm{
+    background-color: #ffffff;
+    height: 70px;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    padding: 0 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+    box-shadow: 0 0 5px #4a4a4a;
+    animation-name: nav;
+    animation-timing-function: ease-out;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+}
+@keyframes nav {
+    0%{
+        height: 70px;
+        bottom: 100%;
+        left: 0;
+    }
+    70%{
+        height: 70px;
+        bottom: 0;
+        left: 0;
+    }
+    80%{
+        height: 60px;
+        bottom: 0;
+        left: 0;
+    }
+    100%{
+        height: 70px;
+        bottom: 0;
+        left: 0;
+    }
+}
+
+
+.nav-sm__list,
+.nav-sm__list{
+    list-style: none;
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+}
+.nav-sm__link,
+.nav-lg__link{
+    text-decoration: none;
+    color: inherit;
+    text-shadow: 0 0 1px #4a4a4a;
+    opacity: 0.6;
+}
+
+.nav-sm__link--selected{
+    opacity: 1;
+}
+
+/* navigator for large screens */
+
+.nav-lg {
+    position: fixed;
+    background-color: transparent;
+    top: 5%;
+    display: none;
+    left: -180px;
+}
+
+.nav-lg__item {
+  position: relative;
+  background-color: #A4BDBC;
+  font-size: 20px;
+  padding: 10px;
+  margin-top: 20px;
+  width: 220px;
+  display: flex;
+  justify-content: end;
+  gap: 10px;
+  left: 0;
+}
+
+.nav-lg__item:hover{
+  left: 130px;
+}
+
+.nav-lg__icon{
+    color: #606060;
 }
 
 /* buttons */
@@ -31,7 +127,7 @@ body{
     border-radius: 50px;
     border: none;
     outline: none;
-    transition: box-shadow 0.5s;
+    transition: box-shadow 0.5s, left 1s;
     box-shadow: 2px 2px 3px #4a4a4a, -2px -2px 3px #ffffff;
 }
 .clickable:hover{
@@ -144,5 +240,45 @@ body{
     font-size: 35px;
     margin: 30px 0;
 }
+/******************* FOOTER ********************/
 
+.footer{
+    grid-area: footer;
+    padding-top: 100px;
+    background-image: url(../assets/images/bg-footer.png);
+    background-size: cover;
+    margin-top: 30px;
+    padding-bottom: 20px;
+}
+
+.footer__container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    gap: 30px;
+    font-size: 18px;
+}
+
+.footer__social-list,
+.footer__section-list{
+    display: flex;
+    gap: 30px;
+    list-style: none;
+}
+
+.footer__section-list{
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer__social-link,
+.footer__section-link{
+    text-decoration: none;
+    color:#A4BDBC;
+}
+
+.footer__social-icon{
+    font-size: 40px;
+}
 

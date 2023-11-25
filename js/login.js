@@ -23,7 +23,8 @@ forms.addEventListener("mousedown", (event) => {
 })
 
 /* slider effect */
-signinbtn.addEventListener("click", () => {
+
+const showSignin = () => {
     circle.classList.add("slider-circle")
     signin.classList.add("slider-signin")
     login.classList.add("slider-login")
@@ -31,10 +32,10 @@ signinbtn.addEventListener("click", () => {
     setTimeout(()=> {
         forms.children[0].classList.add("hide")
         forms.children[1].classList.add("show")
-    }, 1000)
-})
+    }, 900)
+}
 
-loginbtn.addEventListener("click", () => {
+const showLogin = () => {
     circle.classList.remove("slider-circle")
     signin.classList.remove("slider-signin")
     login.classList.remove("slider-login")
@@ -42,5 +43,18 @@ loginbtn.addEventListener("click", () => {
     setTimeout(()=> {
         forms.children[0].classList.remove("hide")
         forms.children[1].classList.remove("show")
-    }, 1000)
+    }, 900)
+}
+
+
+signinbtn.addEventListener("click", showSignin)
+
+loginbtn.addEventListener("click", showLogin)
+
+
+/* request from other page*/
+
+document.addEventListener("DOMContentLoaded", () => {
+    if (window.location.hash == "#tosignin") showSignin()
 })
+            
