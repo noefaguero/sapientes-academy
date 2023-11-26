@@ -97,6 +97,7 @@ body{
     top: 5%;
     display: none;
     left: -180px;
+    z-index: 10;
 }
 
 .nav-lg__item {
@@ -110,6 +111,7 @@ body{
   justify-content: end;
   gap: 10px;
   left: 0;
+  
 }
 
 .nav-lg__item:hover{
@@ -118,7 +120,12 @@ body{
 
 .nav-lg__icon{
     color: #606060;
+    transition: transform 1.5s ease-in-out;
 }
+
+.nav-lg__item:hover .nav-lg__icon{
+    transform: rotate(360deg);
+  }
 
 /* buttons */
 
@@ -343,6 +350,7 @@ body{
     margin-top: 30px;
     padding-bottom: 20px;
 }
+
 
 .footer__container{
     display: flex;

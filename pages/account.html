@@ -10,18 +10,21 @@
         <title>SAPIENTES ACADEMY</title>
     </head>
     <body>
-        
+        <!-- CONTAINER -->
         <div class="container">
+            <!-- NAVS -->
             <nav class="navs">
+                <!-- NAV FOR SMALL SCREENS -->
                 <div class="nav-sm">
                     <ul class="nav-sm__list">
                         <li class="nav-sm__item"><a class="nav-sm__link nav-sm__link--selected" href="../index.html">INICIO</a></li>
                         <li class="nav-sm__item"><a class="nav-sm__link" href="#">MI CUENTA</a></li>
                         <li class="nav-sm__item"><a class="nav-sm__link" href="./login.html#tosignin">REGÍSTRATE</a></li>
-                        <li class="nav-sm__item"><a class="nav-sm__link" href="#">CONÓCENOS</a></li>
+                        <li class="nav-sm__item"><a class="nav-sm__link" href="./about.html">CONÓCENOS</a></li>
                     </ul>
                 </div>
 
+                <!-- NAV FOR LARGE SCREEN -->
                 <div class="nav-lg">
                     <ul class="nav-lg__list">
                         <li class="clickable nav-lg__item">
@@ -37,18 +40,19 @@
                             <i class="nav-lg__icon fa-solid fa-pen"></i>
                         </li>
                         <li class="clickable nav-lg__item">
-                            <a class="nav-lg__link nav-lg__link--selected" href="#">CONÓCENOS</a>
+                            <a class="nav-lg__link nav-lg__link--selected" href="./about.html">CONÓCENOS</a>
                             <i class="nav-lg__icon fa-solid fa-magnifying-glass"></i>
                         </li>
                     </ul>
                 </div>
             </nav>
-            
 
+            <!-- HEADER -->
             <header class="header">
                 <h1 class="welcome__title">SAPIENTES ACADEMY</h1>
             </header>
 
+            <!-- CONTROL TO CHOOSE LESSONS -->
             <main class="lessons">
                 <div class="lessons__control">
                     <ul class="control__list" >
@@ -60,9 +64,11 @@
                         <li class="control__item"><a href="#" class="control__link">TEMA 6</a></li>
                     </ul>
                 </div>
-                <div class="lessons__lesson">
 
-                    <section class="art__first">
+                <!-- LESSONS -->
+                <div class="lessons__lesson">
+                    <!-- FIRST LESSON -->
+                    <section class="art__first" id="first">
                         <article>
                             <h1 class="lesson__title">EL CRETÁCICO</h1>
                             <p class="lesson__body">El Cretácico es un período fascinante en la historia de la Tierra que se extiende desde hace aproximadamente 145 millones de años hasta hace unos 66 millones de años. Durante este tiempo, se produjeron eventos geológicos y biológicos cruciales que dieron forma al mundo que conocemos hoy.</p>
@@ -73,7 +79,9 @@
                                     <h2 class="lesson__subtitle">Flora y Fauna</h2>
                                     <p class="lesson__body">El Cretácico fue testigo de la diversificación de los dinosaurios, incluyendo especies icónicas como el Tiranosaurio Rex y el Triceratops. Además, las plantas con flores, conocidas como angiospermas, experimentaron un auge durante este período, transformando los paisajes.</p>
                                 </div>
-                                <img class="lesson__img" src="../assets/images/fosil.webp" alt=".">
+                                <div class="lesson__containerimg">
+                                    <img class="lesson__img" src="../assets/images/fosil.webp" alt="."> 
+                                </div>
                             </div>
                             <div class="lesson__row">
                                 <ul class="lesson__list info">
@@ -83,7 +91,9 @@
                                 </ul>
                             </div>
                             <div class="lesson__row">
-                                <img class="lesson__img" src="../assets/images/trex.jpeg" alt=".">
+                                <div class="lesson__containerimg">
+                                    <img class="lesson__img" src="../assets/images/trex.jpeg" alt=".">
+                                </div>
                                 <div class="lesson__col--70">
                                     <h2 class="lesson__subtitle">Extinción Masiva</h2>
                                     <p class="lesson__body">Al final del Cretácico, ocurrió una extinción masiva que marcó el fin de la era de los dinosaurios no aviares. Se han propuesto varias teorías sobre las causas, incluyendo impactos de asteroides y cambios climáticos significativos.</p>
@@ -91,14 +101,47 @@
                                 </div>
                             </div>
                         </article>
-                        
                     </section>
-                    <section class="art__second"></section>
 
-                    
+                    <!-- SECOND LESSON -->
+                    <section class="art__second" id="second">
+                        <article>
+                            <h1 class="lesson__title">EL CARBONÍFERO</h1>
+                            <p class="lesson__body">El Carbonífero es un período fascinante en la historia de la Tierra que se extiende desde hace aproximadamente 145 millones de años hasta hace unos 66 millones de años. Durante este tiempo, se produjeron eventos geológicos y biológicos cruciales que dieron forma al mundo que conocemos hoy.</p>
+                            <div class="lesson__row">
+                                <div class="lesson__col--70">
+                                    <h2 class="lesson__subtitle">Geología del Carbonífero</h2>
+                                    <p class="lesson__body">La división del Cretácico se realiza en dos subperíodos: el Cretácico Inferior (145-100 millones de años atrás) y el Cretácico Superior (100-66 millones de años atrás). Cada subperíodo tiene características geológicas distintivas, desde la formación de cordilleras hasta cambios en los niveles del mar.</p>
+                                    <h2 class="lesson__subtitle">Flora y Fauna</h2>
+                                    <p class="lesson__body">El Cretácico fue testigo de la diversificación de los dinosaurios, incluyendo especies icónicas como el Tiranosaurio Rex y el Triceratops. Además, las plantas con flores, conocidas como angiospermas, experimentaron un auge durante este período, transformando los paisajes.</p>
+                                </div>
+                                <div class="lesson__containerimg">
+                                    <img class="lesson__img" src="../assets/images/libelula-gigante.jpeg" alt="."> 
+                                </div>
+                            </div>
+                            <div class="lesson__row">
+                                <ul class="lesson__list info">
+                                    <li><strong>Dinosaurios destacados:</strong> Tyrannosaurus Rex, Triceratops, Velociraptor.</li>
+                                    <li><strong>Plantas:</strong> Angiospermas como magnolias y lirios.</li>
+                                    <li><strong>Océanos:</strong> Desarrollo de nuevos grupos de reptiles marinos.</li>
+                                </ul>
+                            </div>
+                            <div class="lesson__row">
+                                <div class="lesson__containerimg">
+                                    <img class="lesson__img" src="../assets/images/carb.jpg" alt=".">
+                                </div>
+                                <div class="lesson__col--70">
+                                    <h2 class="lesson__subtitle">Extinción Masiva</h2>
+                                    <p class="lesson__body">Al final del Cretácico, ocurrió una extinción masiva que marcó el fin de la era de los dinosaurios no aviares. Se han propuesto varias teorías sobre las causas, incluyendo impactos de asteroides y cambios climáticos significativos.</p>
+                                    <p>Aunque los dinosaurios desaparecieron, esta extinción abrió el camino para la evolución de nuevos grupos de animales, incluyendo mamíferos que eventualmente dominarían la Tierra.</p> 
+                                </div>
+                            </div>
+                        </article>
+                    </section>
                 </div>
             </main>
-
+            
+            <!-- FOOTER -->
             <footer class="footer">
                 <div class="footer__container">
                     <li class="footer__social-list">
@@ -130,5 +173,6 @@
                 </div>
             </footer>
         </di>
+        <script src="../js/account.js"></script>
     </body>
 </html>
