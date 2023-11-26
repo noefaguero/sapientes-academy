@@ -1,0 +1,125 @@
+/* section lesson control */
+
+.lessons__control{
+    padding: 50px;
+    max-width: 1000;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.control__list{
+    list-style: none;
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
+}
+
+.control__item{
+    font-size: 30px;
+    opacity: 0.6;
+}
+
+.control__item--selected{
+    opacity: 1;
+}
+
+.control__link{
+    text-decoration: none;
+    color: inherit;
+}
+
+
+/* section lesson */
+
+
+.lessons__lesson{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    z-index: 1;
+}
+
+.art__first,
+.art__second{
+    background-color: white;
+    box-shadow: 0 0 3px grey;
+}
+
+.art__first{
+    margin-top: 100px;
+    width: 90%;
+    padding: 50px;
+    background-color: white;
+    box-shadow: 0 0 3px grey;
+    border-radius: 1%;
+}
+
+.art__second{
+    position: absolute;
+    width: 80%;
+    transform: translate(-50%, 0);
+    height: 100px;
+    border-radius: 10px;
+    left: 50%;
+    top: 50px;
+    z-index: -1;
+}
+
+.lesson__title {
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.lesson__subtitle {
+    color: #3498db;
+    margin-bottom: 15px;
+    align-self: self-start;
+}
+
+.lesson__img {
+    border-radius: 8px;
+    width: 40%;
+    margin: 0 30px;
+
+}
+
+.lesson__body {
+    margin-bottom: 30px;
+    text-align: justify;
+}
+
+.lesson__list {
+    margin-bottom: 30px;
+    
+}
+
+.lesson__col{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.lesson__row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.info{
+    background-color: #3498dba1;
+    border-radius: 10px;
+    padding: 15px;
+    padding-left: 30px;
+}
+
+@media screen and (min-width: 992px) {
+    .lesson__img {
+        width: 28%;
+    }
+    .lesson__col--70{
+        width: 65%;
+    }
+}
